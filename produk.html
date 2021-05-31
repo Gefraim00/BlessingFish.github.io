@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessing Fish</title>
+    <link rel="icon" href="img/Logo.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loading text-center">
+            <img src="img/logo.gif">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".preloader").fadeOut();
+        })
+    </script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    untuk info lebih lanjut dan tentang pemesanan silahkan langsung hubungi penjual
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://api.whatsapp.com/send?phone=6281703303453" target="_blank"><button type="button"
+                            class="btn btn-primary">Hubungi
+                            Penjual</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                BLESSING FISH
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="#">Produk</a>
+                    <a class="nav-link" href="profil.html">Profil</a>
+                    <!-- <a class="nav-link" href="#">Contact</a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- jumbotron -->
+    <div class="jumbotron">
+        <div class="jumboDesc text-center">
+            <h1 class="display-4">Tersedia berbagai jenis <br><span>Ikan Segar</span><br> dan
+                <br>
+                <span>Ikan Beku</span></h1>
+        </div>
+    </div>
+
+    <!-- search bar -->
+    <div class="search text-center">
+        <div class="container">
+            <div class="noWa">
+                <img src="img/iconwa.png" width="32" height="32"> <span style="color: white;">+62
+                    817-0330-3453</span>
+            </div>
+            <input type="text" placeholder="cari produk....">
+        </div>
+    </div>
+
+    <!-- produk -->
+    <section class="produk">
+        <h4 class="text-center">
+            Produk Tersedia
+            <hr>
+        </h4>
+        <div class="container">
+            <div class="row produk-row reveal">
+                <div class="col">
+                    <div id="produk-item">
+                        <div class="row">
+                            <div class="col-lg list-item">
+                                <img src="img/produk1.jpg" width="300" height="142">
+                                <h4>Cakalang</h4>
+                                <p>Harga</p>
+                                <p style="color: #335bca;">Rp.50.000.00</p>
+                                <button class="btn btn-primary" onclick="show_hide()">Cek Deskripsi</button>
+                            </div>
+                            <div id="cakalang" style="display: none;">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <img src="img/produk1.jpg" width="500" height="237">
+                                        <h4 class="mt-3">Cakalang</h4>
+                                        <hr width="200px">
+                                        <p>Rp.50.000.00</p>
+                                        <p>Berat : 19 kg</p>
+                                        <p>Ikan ini sering juga disebut sebagai ikan tongkol putih.Ikan cakalang yang
+                                            umum ada di Indonesia adalah skipjack tuna atau Katsuwonus pelamis</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg list-item">
+                                <img src="img/pani2.jpg" width="300" height="142">
+                                <h4>Pani (Tuna Kecil)</h4>
+                                <p>Harga</p>
+                                <p style="color: #335bca;">Rp.45.000.00</p>
+                                <button class="btn btn-primary" onclick="show_hide2()">Cek Deskripsi</button>
+                            </div>
+                            <div id="pani" style="display: none;">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <img src="img/pani2.jpg" width="500" height="237">
+                                        <h4 class="mt-3">Pani ( Tuna Kecil )</h4>
+                                        <hr width="200px">
+                                        <p>Rp.45.000.00</p>
+                                        <p>Berat : 8 kg</p>
+                                        <p>Ikan ini merupakan anakan dari ikan tuna</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg list-item">
+                                <img src="img/tuna.jpg" width="300" height="142">
+                                <h4>Tuna</h4>
+                                <p>Harga</p>
+                                <p style="color: #335bca;">Rp.100.000.00</p>
+                                <button class="btn btn-primary" onclick="show_hide3()">Cek Deskripsi</button>
+                            </div>
+                            <div id="tuna" style="display: none;">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <img src="img/tuna.jpg" width="500" height="237">
+                                        <h4 class="mt-3">Tuna</h4>
+                                        <hr width="200px">
+                                        <p>Rp.100.000.00</p>
+                                        <p>Berat : 20 kg</p>
+                                        <p>Tidak seperti kebanyakan ikan yang memiliki daging berwarna putih, daging
+                                            tuna berwarna merah muda sampai merah tua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- contact us -->
+
+    <!-- <div class="container contact text-center">
+        <h4 class="text-center">
+            Contact
+            <hr>
+        </h4>
+        <p>untuk pemesanan atau ingin informasi lebih lanjut silahkan hubungi kami pada nomor di
+            bawah ini :</p>
+    </div> -->
+
+
+    <!-- alert -->
+    <div class="container revealx">
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Informasi</h4>
+            <p>Mohon maaf untuk produk yang tersedia baru sedikit saja, jadi untuk informasi produk terbaru kami akan di
+                update di social media kami.</p>
+            <p>untuk pemesanan bisa langsung menghubungi nomor wa yang ada di atas atau klik link dibawah ini !.</p>
+            <p> <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    Hubungi Kami
+                </button></p>
+            <hr>
+            <p class="mb-0">Terima Kasih</p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <footer>
+            <div class="row footer-item">
+                <div class="col-lg">
+                    <img src="img/Logo.png" alt="" class="footer-content logo">
+                </div>
+                <div class="col-lg footer-content">
+                    <h5>Alamat</h5>
+                    <p>Sulawesi Utara,<i><b><a
+                                    href="https://www.google.com/maps/place/Bitung,+Kota+Bitung,+Sulawesi+Utara,+Indonesia/@1.4661186,125.0420431,11z/data=!3m1!4b1!4m5!3m4!1s0x3287009a44b7629b:0x3030bfbcaf77270!8m2!3d1.4403744!4d125.1216524"
+                                    target="_blank">Kota
+                                    Bitung</a></b></i></p>
+                    <p>Winenet 2, Kec. Aertembaga</p>
+                    <p>Lingkungan 1</p>
+                </div>
+                <div class="col-lg footer-content">
+                    <h5>Contact Us</h5>
+                    <p><img src="img/iconfb.png" width="30" height="30"><a href="">facebook</a></p>
+                    <p><img src="img/iconig.png" width="30" height="30"><a href="">Instagram</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script script script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        var a;
+
+        function show_hide() {
+            if (a == 1) {
+                document.getElementById("cakalang").style.display = "inline";
+                return a = 0;
+            } else {
+                document.getElementById("cakalang").style.display = "none";
+                return a = 1;
+            }
+        }
+    </script>
+
+    <script>
+        var a;
+
+        function show_hide2() {
+            if (a == 1) {
+                document.getElementById("pani").style.display = "inline";
+                return a = 0;
+            } else {
+                document.getElementById("pani").style.display = "none";
+                return a = 1;
+            }
+        }
+    </script>
+
+    <script>
+        var a;
+
+        function show_hide3() {
+            if (a == 1) {
+                document.getElementById("tuna").style.display = "inline";
+                return a = 0;
+            } else {
+                document.getElementById("tuna").style.display = "none";
+                return a = 1;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
